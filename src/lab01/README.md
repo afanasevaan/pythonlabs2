@@ -74,6 +74,7 @@ book.borrow()
 ```
 
 ## Результат работы
-![im01](/images/lab01/im01)
-![im02](/images/lab01/im02)
-![im03](/images/lab01/im03)
+
+![im01.png](/images/lab01/im01.png)
+![im02.png](/images/lab01/im02.png)
+![im03.png](/images/lab01/im03.png)
