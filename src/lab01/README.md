@@ -75,7 +75,8 @@ book.borrow()
 
 ## Результат работы
 
-[model.py](src/lad01/model.py)
+[model.py](src/lab01/model.py)  
+
 [demo.py](src/lab01/demo.py)
 ![im01.png](/images/lab01/im01.png)
 ![im02.png](/images/lab01/im02.png)
