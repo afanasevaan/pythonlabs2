@@ -34,8 +34,8 @@ class Book:
     def _validate_year(self, value):
         if not isinstance(value, int):
             raise TypeError("Год должен быть целым числом")
-        if value < self.MIN_YEAR or value > 2024:  # текущий год
-            raise ValueError(f"Год должен быть от {self.MIN_YEAR} до 2024")
+        if value < self.MIN_YEAR or value > 2026:  # текущий год
+            raise ValueError(f"Год должен быть от {self.MIN_YEAR} до 2026")
     
     def _validate_pages(self, value):
         if not isinstance(value, int):
@@ -116,7 +116,7 @@ class Book:
     # Бизнес-методы
     def get_age_category(self):
         """Определяет возрастную категорию книги"""
-        current_year = 2024
+        current_year = 2026
         age = current_year - self.year
         if age < 5:
             return "Новинка"
