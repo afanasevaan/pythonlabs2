@@ -69,14 +69,14 @@ class Book:
         validate_price(value)
         self._price = float(value)
 
-    def str(self):
+    def __str__(self):
         status = "Доступна" if self.is_available else "Выдана"
         return f"📚 {self.title} - {self.author} ({self.year}) | {self.pages} стр. | {self.price:.2f} руб. | {status}"
 
-    def repr(self):
+    def __repr__(self):
         return f"Book(title='{self.title}', author='{self.author}', year={self.year})"
 
-    def eq(self, other):
+    def __eq__(self, other):
         if not isinstance(other, Book):
             return NotImplemented
         return self.title == other.title and self.author == other.author
