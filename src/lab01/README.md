@@ -39,11 +39,11 @@
 - `price` - геттер и сеттер с валидацией
 
 #### Методы валидации
-- `_validate_title` - проверка названия
-- `_validate_author` - проверка автора
-- `_validate_year` - проверка года
-- `_validate_pages` - проверка страниц
-- `_validate_price` - проверка цены
+- `validate_title` - проверка названия
+- `validate_author` - проверка автора
+- `validate_year` - проверка года
+- `validate_pages` - проверка страниц
+- `validate_price` - проверка цены
 
 #### Бизнес-методы
 - `get_age_category()` - определение возрастной категории книги
@@ -60,7 +60,6 @@
 
 ![im01.png](/images/lab01/im01.png)
 ![im02.png](/images/lab01/im02.png)
-![im03.png](/images/lab01/im03.png)
 
 ## Ответы на вопррсы 
 #### Вопрос 1. Что является сущностью?
