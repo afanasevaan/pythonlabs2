@@ -1,5 +1,5 @@
 from typing import List, Optional, Callable
-from model import Book
+from lab01.model import Book
 
 
 class Library:
@@ -85,3 +85,15 @@ class Library:
 
     def __repr__(self) -> str:
         return f"Library(name='{self.name}', books={len(self._items)})"
+    
+    def get_printed_books(self) -> 'Library':
+        from models import PrintedBook
+        return self.filter(lambda b: isinstance(b, PrintedBook))
+
+    def get_ebooks(self) -> 'Library':
+        from models import Ebook
+        return self.filter(lambda b: isinstance(b, Ebook))
+
+    def get_audiobooks(self) -> 'Library':
+        from models import AudioBook
+        return self.filter(lambda b: isinstance(b, AudioBook))
