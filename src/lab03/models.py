@@ -5,8 +5,8 @@ class PrintedBook(Book):
     def __init__(self, title: str, author: str, year: int, pages: int, price: float,
                  binding: str, circulation: int):
         super().__init__(title, author, year, pages, price)
-        self.binding = binding
-        self.circulation = circulation
+        self.binding = binding #Сохраняет переплёт внутри объекта
+        self.circulation = circulation #Сохраняет тираж внутри объекта
 
     def get_shipping_weight(self) -> float:
         return self.pages * 0.01
