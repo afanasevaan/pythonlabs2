@@ -13,8 +13,6 @@ class Library:
     def __init__(self, name: str = "Библиотека"):
         self.name = name
         self._items: List[Book] = []
-
-    # ========== Базовые операции ==========
     
     def add(self, item: Book) -> None:
         if not isinstance(item, Book):
@@ -44,8 +42,6 @@ class Library:
         if not (0 <= index < len(self._items)):
             raise IndexError(f"Индекс {index} вне диапазона")
         return self._items[index]
-
-    # ========== Методы для ЛР-5 ==========
     
     def sort_by(self, key_func: Callable[[Book], Any], reverse: bool = False) -> 'Library':
         """Сортировка с использованием функции-ключа."""
